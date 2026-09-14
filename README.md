@@ -5,7 +5,7 @@ pfSense 기반으로 WAN / DMZ / 관제망을 존 단위로 분리하고, Defaul
 | 항목 | 내용 |
 |---|---|
 | 프로젝트 | 3-Tier 웹·네트워크 통합 보안관제 시스템 |
-| 소속 | KDT 정보보안 교육과정 팀 프로젝트 (팀 `TODO:` 명) |
+| 소속 | KDT 정보보안 교육과정 팀 프로젝트 (팀 4명) |
 | 기간 | 2026.08.01 ~ 2026.08.31 (1개월) |
 | 담당 | 방화벽(pfSense) 및 네트워크 존 설계 |
 | 환경 | VMware Workstation / pfSense 2.8.1 / VM 5대 |
@@ -255,6 +255,6 @@ LAN 규칙을 최소 권한으로 좁히면서, pfSense 자기 자신(self)으�
 
 **연락처**
 
-- Email: `TODO:` (확정 후 반영)
+- Email: nht1763dk@naver.com
 - 상세 기록(Notion): `TODO:`
 - 포트폴리오 사이트(GitHub Pages): `TODO:`
