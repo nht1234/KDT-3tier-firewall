@@ -256,6 +256,6 @@ LAN 규칙을 최소 권한으로 좁히면서, pfSense 자기 자신(self)으�
 
 **연락처**
 
-- Email: nht1763dk@naver.com
+- Email: nht1234dk@gmail.com
 - 상세 기록(Notion): https://app.notion.com/p/3-Tier-3db35b674779812490f8ebee99b38e26
 - 포트폴리오 사이트(GitHub Pages): https://nht1234.github.io/KDT-3tier-firewall/
