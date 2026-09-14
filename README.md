@@ -9,6 +9,7 @@ pfSense 기반으로 WAN / DMZ / 관제망을 존 단위로 분리하고, Defaul
 | 기간 | 2026.08.01 ~ 2026.08.31 (1개월) |
 | 담당 | 방화벽(pfSense) 및 네트워크 존 설계 |
 | 환경 | VMware Workstation / pfSense 2.8.1 / VM 5대 |
+| 사이트 | https://nht1234.github.io/KDT-3tier-firewall/ |
 
 > 실습 환경 기준입니다. 상용 트래픽이나 실제 운영망 지표가 아니라, 격리된 가상망에서 존 분리와 정책 설계를 직접 구성하고 검증한 결과입니다.
 
@@ -257,4 +258,4 @@ LAN 규칙을 최소 권한으로 좁히면서, pfSense 자기 자신(self)으�
 
 - Email: nht1763dk@naver.com
 - 상세 기록(Notion): `TODO:`
-- 포트폴리오 사이트(GitHub Pages): `TODO:`
+- 포트폴리오 사이트(GitHub Pages): https://nht1234.github.io/KDT-3tier-firewall/
