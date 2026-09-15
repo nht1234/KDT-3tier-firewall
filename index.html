@@ -136,6 +136,9 @@ em{font-style:normal}
 .stack__item{background:var(--white);border:1px solid var(--line);border-radius:9px;padding:9px 12px}
 .stack__item b{display:block;font-weight:500;font-size:13.5px;color:var(--ink)}
 .stack__item small{display:block;color:var(--gray);font-size:11.5px;margin-top:3px;line-height:1.5}
+.stack__row{display:flex;align-items:center;gap:8px}
+.stack__lv{margin-left:auto;font-size:12.5px;letter-spacing:1.5px;white-space:nowrap;color:var(--accent)}
+.stack__lv .off{color:var(--line)}
 .stack__legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12.5px;color:var(--gray)}
 .stack__legend span{display:inline-flex;align-items:center;gap:7px}
 
@@ -479,7 +482,7 @@ svg .elb{font-size:9.5px;fill:var(--block);font-weight:700}
     <div class="wrap">
       <div class="sec__bar" data-reveal>
         <h2 class="sec__title">Skills<span>.</span></h2>
-        <button class="more" type="button" data-modal="mskills" data-title="기술 스택" data-eyebrow="SKILLS — 보유 기술 전체">더보기 <i aria-hidden="true">→</i></button>
+        <button class="more" type="button" data-modal="mskills" data-title="언어 · 기술 스택" data-eyebrow="SKILLS — 사용할 수 있는 언어">더보기 <i aria-hidden="true">→</i></button>
       </div>
       <p class="sec__desc" data-reveal>이번 프로젝트에서 직접 다룬 기술입니다. 전체 기술 스택은 <b>더보기</b>에서 확인할 수 있습니다.</p>
 
@@ -931,87 +934,45 @@ ping 192.168.200.10               <span class="c">→ 무응답</span></pre>
 </script>
 
 <script type="text/template" id="mskills">
-<p class="lede">보안관제·네트워크 직무에서 사용할 수 있는 기술입니다. <b>이번 3-Tier 프로젝트에서 직접 다룬 기술</b>과, 웹 퍼블리셔 과정에서 익힌 기술을 구분해 정리했습니다.</p>
+<p class="lede">직접 사용할 수 있는 언어와 플랫폼입니다. 방화벽·탐지 도구(pfSense · Suricata · Filebeat · nmap)는 Skills 섹션과 Portfolio 상세에 정리돼 있습니다.</p>
 
 <div class="stack">
   <div class="stack__col">
     <div class="stack__head">
       <span class="stack__dot" style="background:var(--accent)"></span>
-      <span class="stack__name">방화벽 · 존 설계</span>
-      <span class="stack__count">6</span>
+      <span class="stack__name">언어</span>
+      <span class="stack__count">3</span>
     </div>
     <ul class="stack__list">
-      <li class="stack__item"><b>pfSense 2.8.1</b><small>방화벽 룰 · Alias · NAT</small></li>
-      <li class="stack__item"><b>Default Deny 정책</b><small>허용 목록 기반 접근 통제 설계</small></li>
-      <li class="stack__item"><b>존 간 접근 규칙</b><small>규칙 12개 · First-match 순서 설계</small></li>
-      <li class="stack__item"><b>VMnet 존 분리</b><small>WAN · DMZ · 관제망 3존</small></li>
-      <li class="stack__item"><b>고정 IP 체계</b><small>전 구간 DHCP 해제</small></li>
-      <li class="stack__item"><b>인터페이스 다중 구성</b><small>NIC 3장 (em0 · em1 · em2)</small></li>
+      <li class="stack__item"><span class="stack__row"><b>JavaScript</b></span></li>
+      <li class="stack__item"><span class="stack__row"><b>TypeScript</b></span></li>
+      <li class="stack__item"><span class="stack__row"><b>Python</b></span></li>
     </ul>
   </div>
   <div class="stack__col">
     <div class="stack__head">
       <span class="stack__dot" style="background:var(--accent)"></span>
-      <span class="stack__name">네트워크 · 인프라</span>
-      <span class="stack__count">8</span>
+      <span class="stack__name">마크업 · 스타일</span>
+      <span class="stack__count">3</span>
     </div>
     <ul class="stack__list">
-      <li class="stack__item"><b>VMware Workstation</b><small>VM 5대 환경 구성</small></li>
-      <li class="stack__item"><b>TCP/IP · 서브네팅</b></li>
-      <li class="stack__item"><b>L2/L3 장애 진단</b><small>ARP · 라우팅 · 배제법으로 원인 격리</small></li>
-      <li class="stack__item"><b>라우팅 · 게이트웨이 구성</b></li>
-      <li class="stack__item"><b>Ubuntu</b><small>netplan 네트워크 설정</small></li>
-      <li class="stack__item"><b>FreeBSD</b><small>pfSense 기반 OS</small></li>
-      <li class="stack__item"><b>Windows 10</b><small>가상 어댑터 구성</small></li>
-      <li class="stack__item"><b>Kali Linux</b><small>공격자 측 네트워크 구성</small></li>
+      <li class="stack__item"><span class="stack__row"><b>HTML5</b></span><small>웹표준 · 웹접근성</small></li>
+      <li class="stack__item"><span class="stack__row"><b>CSS</b></span></li>
+      <li class="stack__item"><span class="stack__row"><b>jQuery</b></span></li>
     </ul>
   </div>
   <div class="stack__col">
     <div class="stack__head">
       <span class="stack__dot" style="background:var(--accent)"></span>
-      <span class="stack__name">탐지 · 로그</span>
-      <span class="stack__count">5</span>
+      <span class="stack__name">데이터베이스 · 플랫폼</span>
+      <span class="stack__count">2</span>
     </div>
     <ul class="stack__list">
-      <li class="stack__item"><b>Suricata</b><small>WAN 경계 NIDS (IDS 모드)</small></li>
-      <li class="stack__item"><b>ETOpen Emerging Threats</b><small>scan · dos · exploit · web_server</small></li>
-      <li class="stack__item"><b>Filebeat</b><small>beats 5044 전송 경로 설계</small></li>
-      <li class="stack__item"><b>Syslog</b><small>FreeBSD 5140 전송 경로 설계</small></li>
-      <li class="stack__item"><b>차단 로그 분석</b><small>Block 로그 기반 사후 분석</small></li>
-    </ul>
-  </div>
-  <div class="stack__col">
-    <div class="stack__head">
-      <span class="stack__dot" style="background:var(--accent)"></span>
-      <span class="stack__name">검증 · 진단</span>
-      <span class="stack__count">4</span>
-    </div>
-    <ul class="stack__list">
-      <li class="stack__item"><b>nmap</b><small>포트 상태 · filtered 판별</small></li>
-      <li class="stack__item"><b>curl</b><small>서비스 응답 확인</small></li>
-      <li class="stack__item"><b>ping · ICMP</b><small>정책 반영 검증</small></li>
-      <li class="stack__item"><b>arp</b><small>L2 도달성 확인</small></li>
-    </ul>
-  </div>
-  <div class="stack__col">
-    <div class="stack__head">
-      <span class="stack__dot" style="background:var(--gray)"></span>
-      <span class="stack__name">웹 퍼블리싱</span>
-      <span class="stack__count">4</span>
-    </div>
-    <ul class="stack__list">
-      <li class="stack__item"><b>HTML</b><small>웹표준 · 웹접근성</small></li>
-      <li class="stack__item"><b>CSS</b></li>
-      <li class="stack__item"><b>JavaScript · jQuery</b></li>
-      <li class="stack__item"><b>Photoshop</b></li>
+      <li class="stack__item"><span class="stack__row"><b>MySQL</b></span></li>
+      <li class="stack__item"><span class="stack__row"><b>Linux</b></span></li>
     </ul>
   </div>
 </div>
-
-<p class="stack__legend">
-  <span><span class="stack__dot" style="background:var(--accent)"></span> 3-Tier 프로젝트에서 직접 사용</span>
-  <span><span class="stack__dot" style="background:var(--gray)"></span> 그 외 보유 기술</span>
-</p>
 </script>
 
 <script>
