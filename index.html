@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="pfSense 기반 WAN·DMZ·관제망 3존 분리 및 방화벽 정책 설계 — 노현태 보안관제 포트폴리오">
+<meta name="theme-color" content="#1e2022">
 <title>3-Tier 방화벽 존 설계</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -138,7 +145,7 @@ em{font-style:normal}
 
 /* ---------- 7. Tables ---------- */
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:460px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:460px;color:inherit}
 th,td{text-align:left;padding:10px 16px;border-bottom:1px solid var(--line);vertical-align:top}
 thead th{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gray);white-space:nowrap;border-bottom:1px solid var(--line)}
 tbody tr:last-child td{border-bottom:none}
@@ -343,6 +350,8 @@ svg .elb{font-size:9.5px;fill:var(--block);font-weight:700}
 }
 </style>
 <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
 
 <header class="appbar" id="appbar">
   <a class="appbar__brand" href="#home">NHT<span>.</span></a>
@@ -987,3 +996,5 @@ ping 192.168.200.10               <span class="c">→ 무응답</span></pre>
   });
 })();
 </script>
+</body>
+</html>
